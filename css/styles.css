@@ -54,13 +54,20 @@ h1, h2, h3, h4, h5 {
 
 section#about {
     font-size: 1.5rem;
+}
+
+.center-img {
+    margin: 0 auto;
+}
+
+.center-text {
     text-align: center;
 }
 
 .fa {
     color: #000;
     font-size: 2rem;
-    padding: 0.5rem 0.5rem;
+    padding: 1.5rem 0.5rem;
     transition: all 250ms ease;
 }
 
@@ -70,9 +77,8 @@ section#about {
 }
 
 section#contact {
-    display: block;
+    display: inline;
     font-size: 1.0rem;
-    text-align: center;
 }
 
 section#home {
