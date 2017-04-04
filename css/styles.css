@@ -1,5 +1,9 @@
-body {
+/*Override Pure's default font-style*/
+html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
     font-family: 'Raleway', sans-serif;
+}
+
+body {
     margin: auto;
     width: 90%;
 }
@@ -35,7 +39,6 @@ h1, h2, h3, h4, h5 {
 }
 
 #nav-container ul li {
-    /*background-color: #000000;*/
     display: inline;
     margin: 0;
 }
@@ -43,7 +46,7 @@ h1, h2, h3, h4, h5 {
 #nav-container ul li a {
     color: #DDD;
     display: inline-block;    
-    font-size: 1.0rem;
+    font-size: 1.125rem;
     text-decoration: none;
     transition: 250ms;
 }
@@ -55,6 +58,15 @@ h1, h2, h3, h4, h5 {
 
 section#about {
     font-size: 1.5rem;
+}
+
+#stuff {
+    background-image: url('http://placehold.it/800x480');
+    background-size: auto;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
 }
 
 .center-img {
@@ -96,27 +108,27 @@ footer {
     text-align: center;
 }
 
-@media only screen and (min-width: 240px) and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     #home-img {
         display: none;
-    }
-    
+    }    
     #nav-container {
-        display: block;
+        display: inline;
         height: auto;
         overflow: hidden;
-        padding: 1%;
-        width: 98%;
-    }
-    #nav-container ul li {
-        display: block;
         width: 100%;
     }
     #nav-container ul li a {
-        display: block;
         font-size: 0.75rem;
     }
     section#about, section#portfolio, section#contact {
         font-size: 0.9375rem;
+    }
+    #contact-textbox {
+        float: left;
+    }
+    #contact-submit {
+        clear: left;
+        float: left;
     }
 }

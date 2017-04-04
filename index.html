@@ -18,10 +18,11 @@
                     <li class="pure-menu-item"><a href="#home" class="pure-menu-link">Home</a></li>
                     <li class="pure-menu-item"><a href="#about" class="pure-menu-link">About</a></li>
                     <li class="pure-menu-item"><a href="#portfolio" class="pure-menu-link">Portfolio</a></li>
-                    <li class="pure-menu-item"><a href="#contact" class="pure-menu-link">Contact Me</a></li>
+                    <li class="pure-menu-item"><a href="#contact" class="pure-menu-link">Contact</a></li>
                 </ul>
             </nav>
-            <div><img src="http://placehold.it/800x480" class="pure-img center-img" id="home-img"></div>
+            <!--<div><img src="http://placehold.it/800x480" class="pure-img center-img" id="home-img"></div>-->
+            <div class="pure-u-1 pure-u-md-1 pure-u-lg-1" id="stuff"></div>
         </section>
         <section id="about">
             <h2 class="center-text">About Ian</h2>
@@ -54,7 +55,7 @@
         <div class="page-separator"></div>
         <section id="contact">
             <h2 class="center-text">Contact Me</h2>
-            <div class="pure-u-1 pure-u-md-1 pure-u-lg-1 center-text" id="contact-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, necessitatibus eveniet exercitationem saepe, architecto vitae laboriosam illo, omnis cumque nesciunt similique at illum fugiat pariatur est soluta doloribus perferendis expedita.</div>
+            <div class="pure-u-1 pure-u-md-1 pure-u-lg-1 center-text" id="contact-text">wwzzLorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, necessitatibus eveniet exercitationem saepe, architecto vitae laboriosam illo, omnis cumque nesciunt similique at illum fugiat pariatur est soluta doloribus perferendis expedita.</div>
             <div class="separator"></div>
             <div class="pure-u-1 pure-u-md-1 pure-u-lg-1">
                 <form class="pure-form pure-form-aligned center-text">
@@ -68,10 +69,12 @@
                         <div class="pure-control-group">
                             <input type="text" placeholder="Subject">
                         </div>
-                        <div class="pure-control-group">
+                        <div class="pure-control-group" id="contact-textbox">
                             <textarea placeholder="Message"></textarea>
                         </div>
-                        <button type="submit" class="pure-button pure-button-primary">Submit</button>
+                        <div class="pure-control-group" id="contact-button">
+                            <button type="submit" class="pure-button pure-button-primary" id="contact-submit">Submit</button>
+                        </div>
                     </fieldset>    
                 </form>
             </div>
