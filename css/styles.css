@@ -9,21 +9,21 @@ h1, h2, h3, h4, h5 {
 }
 
 .page-separator {
-    width: 100%;
     height: 2.5rem;
+    width: 100%;
 }
 
 .separator {
-    width: 100%;
     height: 1.0rem;
+    width: 100%;
 }
 
 #nav-container {
     background: #222222;
     position: fixed;
-    top: 0;
-    right: 0;
     left: 0;
+    right: 0;
+    top: 0;
 }
 
 #nav-container ul {
@@ -41,15 +41,15 @@ h1, h2, h3, h4, h5 {
 }
 
 #nav-container ul li a {
-    display: inline-block;
-    color: #DDDDDD;
+    color: #DDD;
+    display: inline-block;    
     font-size: 1.0rem;
     text-decoration: none;
     transition: 250ms;
 }
 
 #nav-container ul li a:hover {
-    color: #555555;
+    color: #555;
     transition: 250ms;
 }
 
@@ -85,16 +85,15 @@ section#contact {
     font-size: 1.2rem;
 }
 
-#contact-text {
-    float: left;
-}
-
 section#portfolio {
     font-size: 1.2rem;
 }
 
 footer {
-    height: 15rem;
+    color: #777;
+    font-size: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
 }
 
 @media only screen and (min-width: 240px) and (max-width: 480px) {
