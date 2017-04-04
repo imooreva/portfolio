@@ -82,22 +82,42 @@ section#about {
 }
 
 section#contact {
-    display: inline;
-    font-size: 1.0rem;
+    font-size: 1.2rem;
 }
 
 #contact-text {
     float: left;
 }
 
-section#home {
-    height: 30rem;
-}
-
 section#portfolio {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
 }
 
 footer {
     height: 15rem;
+}
+
+@media only screen and (min-width: 240px) and (max-width: 480px) {
+    #home-img {
+        display: none;
+    }
+    
+    #nav-container {
+        display: block;
+        height: auto;
+        overflow: hidden;
+        padding: 1%;
+        width: 98%;
+    }
+    #nav-container ul li {
+        display: block;
+        width: 100%;
+    }
+    #nav-container ul li a {
+        display: block;
+        font-size: 0.75rem;
+    }
+    section#about, section#portfolio, section#contact {
+        font-size: 0.9375rem;
+    }
 }
