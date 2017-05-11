@@ -3,6 +3,15 @@ html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
     font-family: 'Raleway', sans-serif;
 }
 
+.project-thumb {
+    transition: all 200ms ease;
+}
+
+.project-thumb:hover {
+    border-radius: 2rem;
+    opacity: .75;
+}
+
 body {
     background-color: #EFFFFF;
     color: #222;
@@ -62,7 +71,7 @@ section#about {
     font-size: 1.5rem;
 }
 
-#stuff {
+#backdrop {
     background-image: url('http://placehold.it/800x480');
     background-size: auto;
     background-position: center;
@@ -80,15 +89,15 @@ section#about {
 }
 
 .fa {
-    color: #000;
+    color: #222222;
     font-size: 2rem;
     padding: 1.5rem 0.5rem;
-    transition: all 250ms ease;
+    transition: all 200ms ease;
 }
 
 .fa:hover {
-    color: #30F;
-    transition: all 250ms ease;
+    transition: all 200ms ease;
+    color: #0E52BE;
 }
 
 #my-picture {
