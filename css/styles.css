@@ -5,6 +5,7 @@ html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
 
 .project-thumb {
     transition: all 200ms ease;
+    z-index: -1;
 }
 
 .project-thumb:hover {
@@ -13,8 +14,8 @@ html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
 }
 
 body {
-    background-color: #EFFFFF;
-    color: #222;
+    background-color: #E8FBFB;
+    color: #262626;
     margin: auto;
     width: 90%;
 }
@@ -34,11 +35,12 @@ h1, h2, h3, h4, h5 {
 }
 
 #nav-container {
-    background: #222;
+    background: #003C78; /*#002D67*/
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
+    z-index: 1;
 }
 
 #nav-container ul {
@@ -55,16 +57,16 @@ h1, h2, h3, h4, h5 {
 }
 
 #nav-container ul li a {
-    color: #DDD;
+    color: #FFFFFF;
     display: inline-block;    
     font-size: 1.125rem;
     text-decoration: none;
-    transition: 250ms;
+    transition: all 350ms ease;
 }
 
 #nav-container ul li a:hover {
-    color: #555;
-    transition: 250ms;
+    background-color: #0073E6;
+    color: #EEEEEE;
 }
 
 section#about {
