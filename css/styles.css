@@ -43,11 +43,14 @@ section#portfolio {
 }
 
 #my-picture {
+    border: 0.1rem #002E5B solid;
     border-radius: 50%;
+    box-shadow: 0 0 0.5rem 0.1rem rgba(0, 0, 0, 0.5);
 }
 
 #nav-container {
     background: #003C78; /*#002D67*/
+    box-shadow: 0 0.25rem 0.5rem 0.1rem rgba(0, 0, 0, 0.5);
     position: fixed;
     left: 0;
     right: 0;
@@ -73,7 +76,7 @@ section#portfolio {
     display: inline-block;    
     font-size: 1.125rem;
     text-decoration: none;
-    transition: all 350ms ease;
+    transition: all 200ms ease;
 }
 
 #nav-container ul li a:hover {
@@ -107,6 +110,7 @@ section#portfolio {
 }
 
 .project-caption {
+    font-size: 1.2rem;
     text-align: left;
 }
 
@@ -124,8 +128,14 @@ section#portfolio {
     text-align: center;
 }
 
+
+.project-gitlink-icon {
+    padding: 0.125rem 0.375rem;
+}
+
 .project-img-sm {
-    border: 0.125rem #444444 solid;
+    border: 0.1rem #002E5B solid;
+    box-shadow: 0.25rem 0.25rem 0.5rem 0.1rem rgba(0, 0, 0, 0.5);
     transition: all 200ms ease;
     z-index: -1;
 }
@@ -138,6 +148,23 @@ section#portfolio {
 .project-separator {
     height: 1.5rem;
     width: 100%;
+}
+
+.tech-used {
+    display: block;
+    list-style: none;
+    margin-bottom: 0.25rem;
+    margin-left: -2em;
+    text-align: left;
+}
+
+.tech-used>li {
+    border-radius: 0.375rem;
+    color: #555;
+    display: inline-block;
+    font-size: 0.875rem;
+    margin-right: 0.5rem;
+    padding: 0.125rem 0.375rem;
 }
 
 @media only screen and (max-width: 480px) {
@@ -166,7 +193,16 @@ section#portfolio {
     #nav-container ul li a {
         font-size: 0.75rem;
     }
+    .project-caption {
+        font-size: 1.0rem;
+    }
     .project-separator {
         height: 2.0rem;
+    }
+    .tech-used {
+        margin-top: -1rem;
+    }
+    .tech-used>li {
+        font-size: 0.75rem;
     }
 }
