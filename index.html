@@ -15,7 +15,7 @@
         <section id="home">
             <nav id="nav-container">
                 <ul>
-                    <li class="pure-menu-item"><a href="#home" class="pure-menu-link">Home</a></li>
+                    <!--<li class="pure-menu-item"><a href="#home" class="pure-menu-link">Home</a></li>-->
                     <li class="pure-menu-item"><a href="#about" class="pure-menu-link">About</a></li>
                     <li class="pure-menu-item"><a href="#portfolio" class="pure-menu-link">Portfolio</a></li>
                     <li class="pure-menu-item"><a href="#contact" class="pure-menu-link">Contact</a></li>
@@ -26,10 +26,11 @@
         <section id="about">
             <h2 class="center-text">About Me</h2>
             <div class="pure-g">
-                <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2"><img src="http://placehold.it/200x200" class="pure-img center-img" id="my-picture">
+                <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2"><img src="./img/me.jpg" class="pure-img center-img" id="my-picture">
                 </div>
                 <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
                     <p>Hi! I'm Ian, a self-taught web developer from Virginia.</p>
+                    <p>I started studying JavaScript and other web technologies in early 2016, but I have dabbled with static web programming for fun and Python scripts for work over the years.</p>
                 </div>
             </div>            
         </section>
@@ -37,7 +38,9 @@
         <section id="portfolio">
             <h2 class="center-text">Projects</h2>
             <div class="pure-g">
-                <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2"><a href="http://sleepy-falls-19137.herokuapp.com/" target="_blank"><img src="./img/markdown-sm.jpg" class="pure-img center-img project-img-sm"></a></div>
+                <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                    <a href="http://sleepy-falls-19137.herokuapp.com/" target="_blank"><img src="./img/markdown-sm.jpg" class="pure-img center-img project-img-sm"></a>
+                </div>
                 <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 project-flashcard">
                     <h3 class="project-heading">Markdown Previewer</h3>
                     <p class="project-caption">Using marked.js to parse user input, this app formats and renders markdown text to your screen as you type.</p>
@@ -52,10 +55,12 @@
                     </ul>
                 </div>
                 <div class="project-separator"></div>
-                <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2"><a href="http://frozen-tor-11097.herokuapp.com/" target="_blank"><img src="./img/fcc-leaderboard-sm.jpg" class="pure-img center-img project-img-sm"></a></div>
+                <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">                
+                    <a href="http://frozen-tor-11097.herokuapp.com/" target="_blank"><img src="./img/fcc-leaderboard-sm.jpg" class="pure-img center-img project-img-sm"></a>
+                </div>
                 <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 project-flashcard">
                     <h3 class="project-heading">FCC Scoreboard</h3>
-                    <p class="project-caption">Display user rankings on freeCodeCamp.</p>
+                    <p class="project-caption">Display the latest user rankings on freeCodeCamp.</p>
                     <ul class="tech-used">
                         <li><a href="https://github.com/imooreva/camper-leaderboard" target="_blank"><i class="fa fa-github project-gitlink-icon"></i></a></li>
                         <li>Node</li>
@@ -67,7 +72,9 @@
                     </ul>
                 </div>
                 <div class="project-separator"></div>
-                <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2"><a href="http://shielded-cove-64112.herokuapp.com/" target="_blank"><img src="./img/recipe-box-sm.jpg" class="pure-img center-img project-img-sm"></a></div>
+                <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                    <a href="http://shielded-cove-64112.herokuapp.com/" target="_blank"><img src="./img/recipe-box-sm.jpg" class="pure-img center-img project-img-sm"></a>
+                </div>
                 <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 project-flashcard">
                     <h3 class="project-heading">Recipe Box</h3>
                     <p class="project-caption">Create and edit recipes in your browser's local storage.</p>
@@ -82,10 +89,12 @@
                     </ul>
                 </div>
                 <div class="project-separator"></div>
-                <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2"><a href="https://peaceful-citadel-24973.herokuapp.com/" target="_blank"><img src="./img/url-shortener-sm.jpg" class="pure-img center-img project-img-sm"></a></div>
+                <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                    <a href="https://peaceful-citadel-24973.herokuapp.com/" target="_blank"><img src="./img/url-shortener-sm.jpg" class="pure-img center-img project-img-sm"></a>
+                </div>
                 <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 project-flashcard">
                     <h3 class="project-heading">URL Shortener</h3>
-                    <p class="project-caption">Functionally similar to TinyURL, this app generates and stores shortened URLs in a Mongo database using a Mongoose.js schema. It prevents users from creating multiple database entries for one URL, and Helmet.js middleware is used as a layer of security.</p>
+                    <p class="project-caption">Functionally similar to TinyURL, this app generates and stores shortened URLs in a Mongo database using a Mongoose.js schema. It prevents users from creating multiple entries for one URL, and Helmet.js provides a layer of security.</p>
                     <ul class="tech-used">
                         <li><a href="https://github.com/imooreva/url-shortener" target="_blank"><i class="fa fa-github project-gitlink-icon"></i></a></li>
                         <li>Node</li>
@@ -96,10 +105,12 @@
                     </ul>
                 </div>
                 <div class="project-separator"></div>
-                <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2"><a href="http://wx.glitch.me/" target="_blank"><img src="./img/simple-wx-sm.jpg" class="pure-img center-img project-img-sm"></a></div>
+                <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                    <a href="http://wx.glitch.me/" target="_blank"><img src="./img/simple-wx-sm.jpg" class="pure-img center-img project-img-sm"></a>
+                </div>
                 <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 project-flashcard">
                     <h3 class="project-heading">Weather App</h3>
-                    <p class="project-caption">Shows current observations from weather stations all over the globe using Weather Underground's API. User's query or geolocation returns data in metric or imperial units.</p>
+                    <p class="project-caption">Show current observations from weather stations all over the world using Weather Underground's API. Users can query a specific location or use geolocation to return data in metric or imperial units.</p>
                     <ul class="tech-used">
                         <li><a href="https://github.com/imooreva/simple-weather-app" target="_blank"><i class="fa fa-github project-gitlink-icon"></i></a></li>
                         <li>Node</li>
@@ -109,7 +120,9 @@
                     </ul>
                 </div>
                 <div class="project-separator"></div>
-                <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2"><a href="./demo/javascript-calculator-refactor/index.html" target="_blank"><img src="./img/js-calculator-sm.jpg" class="pure-img center-img project-img-sm"></a></div>
+                <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                    <a href="./demo/javascript-calculator-refactor/index.html" target="_blank"><img src="./img/js-calculator-sm.jpg" class="pure-img center-img project-img-sm"></a>
+                </div>
                 <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 project-flashcard">
                     <h3 class="project-heading">Calculator</h3>
                     <p class="project-caption">Crunch some quick numbers with this green-themed calculator.</p>
@@ -122,7 +135,9 @@
                     </ul>
                 </div>
                 <div class="project-separator"></div>
-                <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2"><a href="./demo/pomodoro-clock-refactor/index.html" target="_blank"><img src="./img/pomodoro-sm.jpg" class="pure-img center-img project-img-sm"></a></div>
+                <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                    <a href="./demo/pomodoro-clock-refactor/index.html" target="_blank"><img src="./img/pomodoro-sm.jpg" class="pure-img center-img project-img-sm"></a>
+                </div>
                 <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 project-flashcard">
                     <h3 class="project-heading">Pomodoro Clock</h3>
                     <p class="project-caption">Need to buckle down and knock out some tasks? Sharpen your focus and flow with the Pomodoro technique!</p>
@@ -137,13 +152,13 @@
         </section>
         <div class="page-separator"></div>
         <section id="contact">
-            <h2 class="center-text">Get In Touch</h2>
+            <h2 class="center-text">Get in touch</h2>
             <div class="center-text">
                 <a href="bmaizlto:ibaznmboorzbegizs@gbmazil.bcozm" onmouseover="this.href=this.href.replace(/b|z/g,'');"><i class="fa fa-envelope contact-fa"></i></a>
                 <a href="https://www.linkedin.com/in/ianmooregis" target="_blank"><i class="fa fa-linkedin-square contact-fa"></i></a>
                 <a href="https://github.com/imooreva" target="_blank"><i class="fa fa-github-square contact-fa"></i></a>
             </div>
-            <div class="pure-u-1 pure-u-md-1 pure-u-lg-1 center-text"><div id="contact-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, necessitatibus eveniet exercitationem saepe, architecto vitae laboriosam illo, omnis cumque nesciunt similique at illum fugiat pariatur est soluta doloribus perferendis expedita.</div></div>
+            <div class="pure-u-1 pure-u-md-1 pure-u-lg-1 center-text"><div id="contact-text"><h3>Thank you for visiting my website!</h3></div></div>
             <div class="project-separator"></div>
             <div class="pure-u-1 pure-u-md-1 pure-u-lg-1">
                 <form class="pure-form pure-form-aligned center-text">
@@ -169,5 +184,5 @@
         </section>
     </body>    
     <div class="page-separator page-bottom"></div>
-    <footer class="page-bottom">Copyright © 2017 Ian Moore. All rights reserved.</footer>
+    <footer id="page-footer">Copyright © 2017 Ian Moore. All rights reserved.</footer>
 </html>

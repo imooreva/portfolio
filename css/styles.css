@@ -4,13 +4,14 @@ html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
 }
 
 body {
-    background-color: #F3FDFD; /*#E8FBFB;*/
+    background-color: #DAE7F1;
     color: #242424;
     margin: auto;
     width: 100%;
 }
 
 footer {
+    background-color: #002E5B;
     color: #FFFFFF;
     font-size: 0.625rem;
     padding-bottom: 0.75rem;
@@ -25,16 +26,16 @@ li>a>i.fa {
     color: #222222;
     font-size: 2rem;
     padding: 1.5rem 0.5rem;
-    transition: all 200ms ease;
+    transition: all 150ms ease;
 }
 
 li>a>i.fa:hover {
-    transition: all 200ms ease;
+    transition: all 150ms ease;
     color: #0E52BE;
 }
 
 section#about {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin: 0 auto;
     padding-top: 3.0rem;
     width: 90%;
@@ -48,21 +49,12 @@ section#contact {
 }
 
 section#portfolio {
+    background-color: #F3FDFD;
     font-size: 1.5rem;
     margin: 0 auto;
-    padding-bottom: 1.5rem;
-    width: 95%;
-}
-
-/*#backdrop {
-    background-image: url('http://placehold.it/800x480');
-    background-size: auto;
-    background-position: center;
-    background-attachment: fixed;
-    margin: 0 auto;
+    padding: 1.5rem 1.5rem 2.0rem 0rem;
     width: 90%;
-    height: 50vh;
-}*/
+}
 
 #contact-text {
     margin: 0 auto;
@@ -70,13 +62,14 @@ section#portfolio {
 }
 
 #my-picture {
-    border: 0.1rem #002E5B solid;
     border-radius: 50%;
-    box-shadow: 0 0 0.5rem 0.1rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0.5rem 0.25rem rgba(0, 0, 0, 0.4);
+    height: 11.25rem;
+    width: 11.25rem;
 }
 
 #nav-container {
-    background: #003C78; /*#002D67*/
+    background: #003C78;
     box-shadow: 0 0.25rem 0.5rem 0.1rem rgba(0, 0, 0, 0.5);
     position: fixed;
     left: 0;
@@ -123,12 +116,12 @@ section#portfolio {
     color: #FFFFFF;
     font-size: 2rem;
     margin: 1.5rem 0.5rem;
-    transition: all 200 ease;
+    transition: all 150ms ease;
 }
 
 .contact-fa:hover {
     color: #0073E6;
-    transition: all 200ms ease;
+    transition: all 150ms ease;
 }
 
 .page-bottom {
@@ -142,6 +135,7 @@ section#portfolio {
 
 .project-caption {
     font-size: 1.2rem;
+    margin-left: 0.75rem;
     text-align: left;
 }
 
@@ -185,7 +179,7 @@ section#portfolio {
     display: block;
     list-style: none;
     margin-bottom: 0.25rem;
-    margin-left: -2em;
+    margin-left: -2.5rem;
     text-align: left;
 }
 
@@ -200,6 +194,10 @@ section#portfolio {
     section#about, section#portfolio, section#contact {
         font-size: 0.9375rem;
     }
+    section#portfolio {
+        padding: 0.5rem 0.5rem;
+    }
+    
     #contact>div>form>fieldset>div>input {
         margin: 0 auto;
     }
