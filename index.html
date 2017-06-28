@@ -1,58 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Ian Moore</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
         <link rel="stylesheet" type="text/css" href="css/pure-release-1.0.0/pure-min.css">
         <link rel="stylesheet" type="text/css" href="css/pure-release-1.0.0/base-min.css">
         <link rel="stylesheet" type="text/css" href="css/pure-release-1.0.0/grid.css">
-        <link rel="stylesheet" type="text/css" href="css/styles.css">        
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     </head>
     <body>
-        <section>
-            <div id="home">
-                <nav id="nav-container">
-                    <ul>
-                        <li class="pure-menu-item"><a href="#about" class="pure-menu-link" tabindex="1">About</a></li>
-                        <li class="pure-menu-item"><a href="#skills" class="pure-menu-link" tabindex="2">Skills</a></li>
-                        <li class="pure-menu-item"><a href="#portfolio" class="pure-menu-link" tabindex="3">Portfolio</a></li>
-                        <li class="pure-menu-item"><a href="#bio-contact" class="pure-menu-link" tabindex="4">Bio/Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </section>
+        <div id="home">
+            <nav id="nav-container">
+                <ul>
+                    <li class="pure-menu-item"><a href="#about" class="pure-menu-link" tabindex="1">Home</a></li>
+                    <li class="pure-menu-item"><a href="#skills" class="pure-menu-link" tabindex="2">Skills</a></li>
+                    <li class="pure-menu-item"><a href="#projects" class="pure-menu-link" tabindex="3">Projects</a></li>
+                    <li class="pure-menu-item"><a href="#bio-contact" class="pure-menu-link" tabindex="4">Bio/Contact</a></li>
+                </ul>
+            </nav>
+        </div>
         <section>
             <div id="about">
                 <h1 class="center-text">About Me</h1>
                 <div class="pure-g">
-                    <div class="pure-u-1">
-                        <p>Hi! I'm Ian, GIS analyst turned self-taught web developer based in Virginia.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium voluptate tenetur quis praesentium minima ullam mollitia sapiente voluptates alias veritatis possimus, eligendi blanditiis! Voluptas dignissimos eveniet iusto cum corporis dolor?</p>
-                    </div>                    
+                    <div class="pure-u-1 pure-u-md-1-3">
+                        <img src="img/me.jpg" class="pure-img center-img" id="my-picture" alt="My picture">
+                    </div>
+                    <div class="pure-u-1 pure-u-md-2-3">
+                        <p>Hi! I'm Ian, GIS professional turned self-taught web developer based in Virginia.</p>
+                        <p>I've got a knack for detail and love building things, especially with APIs and Node.</p>
+                        <p>Please have a look at my projects below.</p>
+                    </div>
                 </div>
             </div>
         </section>
         <section>
             <div id="skills">
+                <h2 class="center-text">My Skills</h2>
                 <div class="pure-g">
-                    <div class="pure-u-1">
-                        <h2 class="center-text">My Skills</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero rerum distinctio, aut. Voluptates vero, aspernatur, dignissimos esse tempore minus dolore saepe, veniam eaque maiores optio amet voluptatibus reprehenderit facere ipsa!</p>
+                    <div class="pure-u-1 pure-u-lg-1-2 center-text">
+                        <h3 class="skill-category">Languages &amp; Libraries</h3>
+                        <!-- Devicon is unaltered, copyrighted, and sourced from: http://konpa.github.io/devicon/ -->
+                        <!-- MIT license: https://github.com/konpa/devicon/blob/master/LICENSE -->
+                        <div class="skill-wrapper">
+                            <div class="skill"><i class="devicon-html5-plain colored"></i><p>HTML5</p></div>
+                            <div class="skill"><i class="devicon-css3-plain colored"></i><p>CSS3</p></div>
+                            <div class="skill"><i class="devicon-javascript-plain colored"></i><p>JavaScript</p></div>
+                            <br>
+                            <div class="skill"><i class="devicon-jquery-plain colored"></i><p>jQuery</p></div>
+                            <div class="skill"><i class="devicon-nodejs-plain colored"></i><p>Node.js</p></div>
+                            <div class="skill"><i class="devicon-express-original colored"></i><p>Express.js</p></div>
+                            <br>
+                            <div class="skill"><i class="devicon-react-original colored"></i><p>ReactJS</p></div>
+                            <div class="skill"><i class="devicon-sass-original colored"></i><p>SASS</p></div>
+                            <div class="skill"><i class="fa fa-database"></i><p>SQL</p></div>
+                        </div>
+                    </div>
+                    <div class="pure-u-1 pure-u-lg-1-2 center-text">
+                        <h3 class="skill-category">Tools &amp; Others</h3>
+                        <div class="skill-wrapper">
+                            <div class="skill"><i class="devicon-git-plain colored"></i><p>Git &amp; Github</p></div>
+                            <div class="skill"><i class="devicon-heroku-original-wordmark colored"></i><p>Heroku</p></div>
+                            <div class="skill"><i class="devicon-webpack-plain colored"></i><p>Webpack</p></div>
+                            <br>
+                            <div class="skill"><i class="devicon-foundation-plain colored"></i><p>Foundation</p></div>
+                            <div class="skill"><i class="fa fa-refresh"></i><p>AJAX &amp; API</p></div>
+                            <div class="skill"><i class="devicon-mocha-plain colored"></i><p>Mocha</p></div>
+                            <br>
+                            <div class="skill"><i class="fa fa-mobile"></i><p>Responsive Design</p></div>
+                            <div class="skill"><i class="devicon-mongodb-plain colored"></i><p>MongoDB</p></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <div class="page-separator"></div>
         <section>
-            <div id="portfolio">
-                <h2 class="center-text">What I've Made</h2>
+            <div id="projects">
+                <h2 class="center-text">My Work</h2>
                 <div class="pure-g">
                     <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 center-text">
-                        <img src="./img/markdown-sm.jpg" alt="Markdown Previewer" class="pure-img center-img project-img-sm">
+                        <img src="img/markdown-sm.jpg" alt="Markdown Previewer" class="pure-img center-img project-img-sm">
                         <a href="http://sleepy-falls-19137.herokuapp.com/" target="_blank" class="pure-button pure-button-active project-button" tabindex="5">View Demo</a>
                     </div>
                     <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 center-text">
@@ -70,7 +103,7 @@
                     </div>
                     <div class="project-separator"></div>
                     <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 center-text">
-                        <img src="./img/recipe-box-sm.jpg" alt="Recipe Box" class="pure-img center-img project-img-sm">
+                        <img src="img/recipe-box-sm.jpg" alt="Recipe Box" class="pure-img center-img project-img-sm">
                         <a href="http://shielded-cove-64112.herokuapp.com/" target="_blank" class="pure-button pure-button-active project-button" tabindex="6">View Demo</a>
                     </div>
                     <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 center-text">
@@ -88,7 +121,7 @@
                     </div>
                     <div class="project-separator"></div>
                     <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 center-text">
-                        <img src="./img/fcc-leaderboard-sm.jpg" alt="freeCodeCamp Leaderboard" class="pure-img center-img project-img-sm">
+                        <img src="img/fcc-leaderboard-sm.jpg" alt="freeCodeCamp Leaderboard" class="pure-img center-img project-img-sm">
                         <a href="http://frozen-tor-11097.herokuapp.com/" target="_blank" class="pure-button pure-button-active project-button" tabindex="7">View Demo</a>
                     </div>
                     <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 center-text">
@@ -106,12 +139,12 @@
                     </div>
                     <div class="project-separator"></div>
                     <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 center-text">
-                        <img src="./img/url-shortener-sm.jpg" alt="URL Shortener" class="pure-img center-img project-img-sm">
+                        <img src="img/url-shortener-sm.jpg" alt="URL Shortener" class="pure-img center-img project-img-sm">
                         <a href="https://peaceful-citadel-24973.herokuapp.com/" target="_blank" class="pure-button pure-button-active project-button" tabindex="8">View Demo</a>
                     </div>
                     <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 center-text">
                         <h3 class="project-heading">URL Shortener</h3>
-                        <p class="project-caption">Generate and store shortened URLs in a Mongo database using a Mongoose.js schema. This app prevents users from creating multiple entries for one URL, and Helmet.js provides a layer of security.</p>
+                        <p class="project-caption">Generate and store shortened URLs in a Mongo database using a Mongoose schema. Users are prevented from creating multiple entries for one URL, and Helmet.js provides a layer of security.</p>
                         <ul class="tech-used">
                             <li><a href="https://github.com/imooreva/url-shortener" target="_blank"><i class="fa fa-github project-gitlink-icon"></i></a></li>
                             <li>Node</li>
@@ -123,7 +156,7 @@
                     </div>
                     <div class="project-separator"></div>
                     <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 center-text">
-                        <img src="./img/simple-wx-sm.jpg" alt="Weather App" class="pure-img center-img project-img-sm">
+                        <img src="img/simple-wx-sm.jpg" alt="Weather App" class="pure-img center-img project-img-sm">
                         <a href="http://wx.glitch.me/" target="_blank" class="pure-button pure-button-active project-button" tabindex="9">View Demo</a>
                     </div>
                     <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 center-text">
@@ -139,12 +172,12 @@
                     </div>
                     <div class="project-separator"></div>
                     <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 center-text">
-                        <img src="./img/js-calculator-sm.jpg" alt="JavaScript Calculator" class="pure-img center-img project-img-sm">
-                        <a href="./demo/javascript-calculator-refactor/index.html" target="_blank" class="pure-button pure-button-active project-button" tabindex="10">View Demo</a>
+                        <img src="img/js-calculator-sm.jpg" alt="JavaScript Calculator" class="pure-img center-img project-img-sm">
+                        <a href="demo/javascript-calculator-refactor/index.html" target="_blank" class="pure-button pure-button-active project-button" tabindex="10">View Demo</a>
                     </div>
                     <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 center-text">
                         <h3 class="project-heading">Calculator</h3>
-                        <p class="project-caption">Crunch some numbers with this green-themed calculator made with plain JavaScript. Math.js provides a cleaner display output.</p>
+                        <p class="project-caption">Crunch some numbers with this green-themed calculator made with plain JavaScript. Math.js provides a cleaner output.</p>
                         <ul class="tech-used">
                             <li><a href="https://github.com/imooreva/javascript-calculator-refactor" target="_blank"><i class="fa fa-github project-gitlink-icon"></i></a></li>
                             <li>HTML</li>
@@ -155,8 +188,8 @@
                     </div>
                     <div class="project-separator"></div>
                     <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 center-text">
-                        <img src="./img/pomodoro-sm.jpg" alt="Pomodoro Clock" class="pure-img center-img project-img-sm">
-                        <a href="./demo/pomodoro-clock-refactor/index.html" target="_blank" class="pure-button pure-button-active project-button" tabindex="11">View Demo</a>
+                        <img src="img/pomodoro-sm.jpg" alt="Pomodoro Clock" class="pure-img center-img project-img-sm">
+                        <a href="demo/pomodoro-clock-refactor/index.html" target="_blank" class="pure-button pure-button-active project-button" tabindex="11">View Demo</a>
                     </div>
                     <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 center-text">
                         <h3 class="project-heading">Pomodoro Clock</h3>
@@ -168,6 +201,7 @@
                             <li>JavaScript</li>
                         </ul>
                     </div>
+                    <div class="page-separator"></div>
                 </div>
             </div>
         </section>
@@ -176,27 +210,31 @@
             <div id="bio-contact">
                 <div class="pure-g">
                     <div class="pure-u-1 pure-u-md-1-3">
-                        <img src="img/me.jpg" class="pure-img center-img" id="my-picture">                        
+                        <!-- Source: https://www.iconfinder.com/iconsets/luchesa-vol-9 -->
+                        <!-- Image is unaltered and copyrighted. Authored by Just UI -->
+                        <!-- Creative Commons license: https://creativecommons.org/licenses/by/3.0/ -->
+                        <img src="img/1498586132_Html.png" class="pure-img center-img" id="bio-icon" alt="coding web icon, sourced from https://www.iconfinder.com/iconsets/luchesa-vol-9">
                     </div>
                     <div class="pure-u-1 pure-u-md-1-3">
                         <div class="bio-text">
                             <p>I started studying web development in 2016, but my exposure to technology at an early age fostered my interest in programming for fun, such as static websites and mIRC scripts. I have also used Python to automate and streamline processes for projects at the office.</p>
                             <p>When I'm not coding or learning, I'm probably fishing, walking the dog, or reading the latest news.</p>
+                            <div class="center-text"><a href="ian-moore-resume.html" target="_blank" class="pure-button pure-button-active resume-button" tabindex="12">View Resume</a></div>
                         </div>
                     </div>
                     <div class="pure-u-1 pure-u-md-1-3 center-text">
-                        <!--<div id="contact-text"><h3>Thank you for visiting my website!</h3></div>-->
                         <h2 class="center-text">Get in touch</h2>
                         <div class="center-text">
-                            <a href="bmaizlto:ibaznmboorzbegizs@gbmazil.bcozm" onmouseover="this.href=this.href.replace(/b|z/g,'');" onfocus="this.href=this.href.replace(/b|z/g,'');" tabindex="12"><i class="fa fa-envelope contact-fa"></i></a>
-                            <a href="https://www.linkedin.com/in/ianmooregis" target="_blank" tabindex="13"><i class="fa fa-linkedin-square contact-fa"></i></a>
-                            <a href="https://github.com/imooreva" target="_blank" tabindex="14"><i class="fa fa-github-square contact-fa"></i></a>
+                            <!-- Font Awesome by Dave Gandy: http://fontawesome.io -->
+                            <a href="bmaizlto:ibaznmboorzbegizs@gbmazil.bcozm" onmouseover="this.href=this.href.replace(/b|z/g,'');" onfocus="this.href=this.href.replace(/b|z/g,'');" tabindex="13"><i class="fa fa-envelope contact-fa"></i></a>
+                            <a href="https://www.linkedin.com/in/ianmooregis" target="_blank" tabindex="14"><i class="fa fa-linkedin-square contact-fa"></i></a>
+                            <a href="https://github.com/imooreva" target="_blank" tabindex="15"><i class="fa fa-github-square contact-fa"></i></a>
                         </div>
                     </div>
                     <div class="project-separator"></div>
                 </div>
             </div>
-        </section>        
+        </section>
+        <footer>Copyright &copy; 2017 Ian Moore. All rights reserved.</footer>
     </body>
-    <footer id="page-footer">Copyright © 2017 Ian Moore. All rights reserved.</footer>
 </html>

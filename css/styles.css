@@ -10,20 +10,20 @@ body {
     width: 100%;
 }
 
-fieldset {
-    color: #333333;
-}
-
 footer {
     background-color: #002E5B;
     color: #EEEEEE;
-    font-size: 0.625rem;
+    font-size: 0.75rem;
     padding-bottom: 2.0rem;
     text-align: center;
 }
 
 h1, h2 {
     text-transform: uppercase;
+}
+
+i[class^="devicon-"], .fa-database, .fa-mobile, .fa-refresh {
+    font-size: 6.0rem;
 }
 
 li>a>i.fa {
@@ -38,44 +38,27 @@ li>a>i.fa:hover {
     color: #0E52BE;
 }
 
-div#about {
-    font-size: 1.25rem;
+#about {
+    font-size: 1.2rem;
     margin: 0 auto;
-    padding-top: 4.0rem;
-    width: 90%;
+    padding: 4.0rem 0.75rem 2.5rem 0.75rem;
+    width: 80%;
 }
 
-div#bio-contact {
+#bio-contact {
     background-color: #002E5B;
     color: #EEEEEE;
     font-size: 1.2rem;
     padding-top: 2.5rem;
 }
 
-div#bio-contact>div>a:focus {
-    outline: 0.1875rem solid #00BFFF;
+#bio-icon {
+    height: 14.0rem;
+    width: 14.0rem;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
-
-div#portfolio {
-    background-color: #F3FDFD;
-    font-size: 1.5rem;
-    margin: 0 auto;
-    padding: 2.0rem 0.75rem;
-    width: 90%;
-}
-
-div#skills {
-    background-color: #FAFEFE;
-    font-size: 1.5rem;
-    margin: 0 auto;
-    padding: 2.0rem 0.75rem;
-    width: 90%;
-}
-
-/*#contact-text {
-    margin: 0 auto;
-    width: 80%
-}*/
 
 #my-picture {
     border-radius: 50%;
@@ -85,11 +68,6 @@ div#skills {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-}
-
-
-#my-picture-div {
-    vertical-align: middle;
 }
 
 #nav-container {
@@ -112,7 +90,6 @@ div#skills {
 
 #nav-container ul li {
     display: inline;
-    margin: 0;
 }
 
 #nav-container ul li a {
@@ -130,6 +107,22 @@ div#skills {
 #nav-container ul li a:focus {
     background-color: #0073E6;
     outline: none;
+}
+
+#projects {
+    background-color: #FAFEFE; /*#F3FDFD;*/
+    font-size: 1.5rem;
+    margin: 0 auto;
+    padding: 2.5rem 0.75rem;
+    width: 80%;
+}
+
+#skills {
+    background-color: #FAFEFE;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    padding: 2.5rem 0.75rem;
+    width: 80%;
 }
 
 .center-img {
@@ -162,15 +155,11 @@ div#skills {
 }
 
 .project-button {
-    cursor: pointer;
     background-color: #0073E6;
     border-radius: 0.375rem;
     color: #EEEEEE;
+    cursor: pointer;
     margin-top: 0.75rem;
-}
-
-.project-button:active {
-    outline: none;
 }
 
 .project-button:focus {
@@ -188,15 +177,14 @@ div#skills {
     padding: 0.125rem 0.375rem;
 }
 
-.project-heading {
+.project-heading, .skill-category {
     background-color: #2A4E6C;
     border-radius: 0.375rem;
     color: #EEEEEE;
     display: inline-block;
-    font-size: 1.2rem;
-    margin-bottom: 0rem;
+    font-size: 1.25rem;
+    margin-bottom: 0;
     padding: 0.25rem 0.5rem;
-    text-align: center;
 }
 
 .project-img-sm {
@@ -206,8 +194,31 @@ div#skills {
 }
 
 .project-separator {
-    height: 1.5rem;
+    height: 3.0rem;
     width: 100%;
+}
+
+.resume-button {
+    background-color: #0073E6;
+    border: 0.125rem solid #FF6347;
+    border-radius: 0.375rem;
+    color: #EEEEEE;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-top: 0.75rem;
+}
+
+.skill {
+    display: inline-block;
+    padding: 1.0rem;
+}
+
+.skill>p {
+    font-size: 1.125rem;
+}
+
+.skill-wrapper {
+    margin-top: 2.0rem;
 }
 
 .tech-used {
@@ -227,28 +238,35 @@ div#skills {
 
 @media only screen and (max-width: 768px) {
     .bio-text {
-        margin: 1.5rem 0.75rem 0rem 0.75rem;
+        margin: 1.5rem 0.75rem 0 0.75rem;
     }
 }
 
 @media only screen and (max-width: 568px) {
+    #about, #projects, #skills {
+        font-size: 0.9375rem;
+        padding: 1.75rem 0.375rem;
+        width: 90%;
+    }
+    #bio-contact {
+        font-size: 0.9375rem;
+        padding-top: 2.0rem;
+    }
+    #projects {
+        padding: 0.5rem;
+    }
     footer {
         padding-bottom: 1.0rem;
     }
-    div#about, div#portfolio, div#bio-contact {
-        font-size: 0.9375rem;
+    i[class^="devicon-"], .fa-database, .fa-mobile, .fa-refresh {
+        font-size: 3.5rem;
     }
-    div#about {
-        padding-top: 2.5rem;
-    }
-    div#bio-contact {
-        padding-top: 2.0rem;
-    }
-    div#portfolio {
-        padding: 0.5rem 0.5rem;
-    }    
     #bio-contact>div>form>fieldset>div>input {
         margin: 0 auto;
+    }
+    #bio-icon {
+        height: 9.75rem;
+        width: 9.75rem;
     }
     #home-img {
         display: none;
@@ -262,27 +280,43 @@ div#skills {
     #nav-container {
         box-shadow: none;
         display: inline;
-        height: auto;
         overflow: hidden;
-        width: 100%;
     }
     #nav-container ul li a {
         font-size: 0.75rem;
     }
+    .page-separator {
+        height: 0.75rem;
+    }
     .project-caption {
+        font-size: 1.0rem;
+    }
+    .project-heading, .skill-category {
         font-size: 1.0rem;
     }
     .project-img-sm {
         box-shadow: none;
     }
     .project-separator {
-        height: 2.0rem;
+        height: 2.25rem;
+    }
+    .resume-button {
+        font-size: 1.0rem;
+    }
+    .skill {
+        padding: 0.5rem;
+    }
+    .skill>p {
+        font-size: 0.9375rem;
+    }
+    .skill-wrapper {
+        margin-top: 1.0rem;
     }
     .tech-used {
-        margin-top: -1rem;
+        margin-top: -1.75rem;
     }
     .tech-used>li {
         font-size: 0.75rem;
-        padding: 0rem 0.25rem;
-    }
+        padding: 0 0.25rem;
+    }    
 }
