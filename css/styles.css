@@ -162,7 +162,7 @@ li>a>i.fa:hover {
     margin-top: 0.75rem;
 }
 
-.project-button:focus {
+.project-button:focus, .resume-button:focus {
     outline: 0.1875rem solid #00BFFF;
     outline-offset: 0.0625rem;
 }
@@ -205,7 +205,7 @@ li>a>i.fa:hover {
     color: #EEEEEE;
     cursor: pointer;
     font-size: 1.5rem;
-    margin-top: 0.75rem;
+    margin: 0.75rem 0;
 }
 
 .skill {
@@ -267,6 +267,7 @@ li>a>i.fa:hover {
     #bio-icon {
         height: 9.75rem;
         width: 9.75rem;
+        margin-top: 0.5rem;
     }
     #home-img {
         display: none;
@@ -302,6 +303,7 @@ li>a>i.fa:hover {
     }
     .resume-button {
         font-size: 1.0rem;
+        margin: 0.75rem 0;
     }
     .skill {
         padding: 0.5rem;
