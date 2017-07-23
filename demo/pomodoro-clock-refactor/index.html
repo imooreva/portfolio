@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">
-		<title>Pomodoro Clock</title>
+        <title>Pomodoro Clock</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
 		<link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<div id="container">
 			<h1>Pomodoro!</h1>
 			<p id="status">Click timer to start/pause</p>
-            <button id="circle" tabindex="1">
+            <button class="tabbed" id="circle" tabindex="1">
 				<div id="timer">00:25:00</div>
 			</button>
 			<div id="btnctr">
 				<p class="labels">Break Length</p>
 				<div id="break">5</div>
-                <div class="buttons"><button class="btn" id="addbrk" onclick="changeBrkLength('+1')" tabindex="2">+</button> <button class="btn" id="subbrk" onclick="changeBrkLength('-1')" tabindex="3">-</button></div>
+                <div class="buttons"><button class="btn tabbed" id="addbrk" onclick="changeBrkLength('+1')" tabindex="2">+</button> <button class="btn tabbed" id="subbrk" onclick="changeBrkLength('-1')" tabindex="3">-</button></div>
 				<p class="labels">Session Length</p>
 				<div id="session">25</div>
-                <div class="buttons"><button class="btn" id="addminute" onclick="changeSesLength('+1')" tabindex="4">+</button> <button class="btn" id="subtractminute" onclick="changeSesLength('-1')" tabindex="5">-</button></div>
+                <div class="buttons"><button class="btn tabbed" id="addminute" onclick="changeSesLength('+1')" tabindex="4">+</button> <button class="btn tabbed" id="subtractminute" onclick="changeSesLength('-1')" tabindex="5">-</button></div>
 			</div>
-            <button id="reset" tabindex="6">Reset</button>
-            <p id="footer"><a href="https://github.com/imooreva/pomodoro-clock-refactor" target="_blank" tabindex="7">Github repo</a></p>
+            <button class="tabbed" id="reset" tabindex="6">Reset</button>
+            <p id="footer"><a href="https://github.com/imooreva/pomodoro-clock-refactor" target="_blank" class="tabbed" tabindex="7">Github repo</a></p>
 		</div>		
         <script src="js/script.js"></script>
     </body>

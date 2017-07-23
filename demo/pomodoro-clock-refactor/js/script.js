@@ -113,7 +113,7 @@ addClickListener('reset', ()=> {
 	if (!timerRunning) {
 		let toSeconds = getLength('session') * 60;
 		setInnerHtml('timer', secondsToHMS(toSeconds));
-		setInnerHtml('status', 'Click timer to start/pause/adjust');
+		setInnerHtml('status', 'Click timer to start/pause');
 		counter = false;
 		breakCounter = false;
 	}
